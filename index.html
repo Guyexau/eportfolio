@@ -5,6 +5,8 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
     <meta charset="UTF-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1024">
+
     <meta name="description" content="Profile of Guy Mbengue, a networks and cybersecurity student specializing in secure systems and networks. Looking for internship opportunities.">
     <meta name="keywords" content="Guy Mbengue, cybersecurity, networks, telecommunications, internship, student, Roanne">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +24,7 @@
                 <li><a class="nav-link" href="programmation.html">Programmation</a></li>
                 <li><a class="nav-link" href="reseaux.html">Réseaux & Systèmes</a></li>
                 <li><a class="nav-link" href="cyber.html">Cybersécurités</a></li>
-                <li><a class="nav-link"href="assets/docs/cv.pdf">Télécharger mon CV</a></li>
+                <li><a class="nav-link" href="assets/docs/cv.pdf">Télécharger mon CV</a></li>
             </ul>
         </header>
     </div>
@@ -36,8 +38,28 @@
             <div class="content-overlay d-flex align-items-center">
                 <!-- Photo -->
                 <div class="portrait-container me-4 custum-iut">
-                    <img src="assets/images/portrait.jpg" alt="Portrait de Guy Mbengue" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #ffffff;">
-                </div>
+    <img src="assets/images/portrait.jpg" alt="Portrait de Guy Mbengue" class="rounded-circle portrait-img">
+        </div>
+        
+        <style>
+        /* Style par défaut pour l'image */
+        .portrait-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            transition: all 0.3s ease; /* Animation fluide pour le changement de dimensions */
+        }
+        
+        /* Media query pour les écrans de 798px ou moins */
+        @media (max-width: 798px) {
+            .portrait-img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        </style>
+
                 <!-- Texte -->
                 <div>
                     <h1 class="fw-bold mb-3 text-primary-custom custum-banner-title">Guy Mbengue</h1>
@@ -50,7 +72,7 @@
         </div>
     </a>
 
-    </div></a>
+
     <div class="container py-5">
     <!-- Formations Section -->
     <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
