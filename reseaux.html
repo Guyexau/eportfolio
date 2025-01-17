@@ -15,32 +15,71 @@
 
 
        <!-- Navbar -->
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills custom-nav">
-            <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-            <!-- Ajout d'un dropdown pour "Projets" -->
-            <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projets
-                </a>
-                <ul class="dropdown-menu custum-drop" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="iots.html">IOTs</a></li>
-                    <li><a class="dropdown-item" href="programmation.html">Programmation</a></li>
-                    <li><a class="dropdown-item" href="reseaux.html">Réseaux et Services</a></li>
-                    <li><a class="dropdown-item" href="cyber.html">Cybersécurité</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="assets/docs/cv.pdf" class="nav-link">Télécharger mon CV</a></li>
-        </ul>
-    </header>
-</div>
+       <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills custom-nav">
+                <li><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+                <li><a class="nav-link" href="iots.html">IOTs</a></li>
+                <li><a class="nav-link" href="programmation.html">Programmation</a></li>
+                <li><a class="nav-link active" href="reseaux.html">Réseaux & Systèmes</a></li>
+                <li><a class="nav-link" href="cyber.html">Cybersécurités</a></li>
+                <li><a class="nav-link"href="assets/docs/cv.pdf">Télécharger mon CV</a></li>
+            </ul>
+        </header>
+    </div>
       <div class="b-example-divider"></div>
     <!--Main content-->
 
     <main>
-  
+        <div class="container py-5">
+            <!-- Présentation Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Concevoir et tester un nouveau réseau informatique & Services</h2>
+                <p class="text-secondary enhanced-paragraph">
+                    J'ai conçu un réseau informatique complet comprénant <span class="highlight">server virtuel</span> avec des équipements réseaux <span class="highlight">Cisco</span>. Ce réseau informatique correspond typiquement à celle d'une PME et est <span class="highlight">évolutif
+                    </span> pour supporter une croissance de l'entreprise. J'ai également mis en place de la sécurité sur le réseau en utilisant des <span class="highlight">Acls</span> et des authentifications à l'aide d'un<span class="highlight">Serveur Radius</span> pour sécuriser les communications.
+                </p>
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/wifi.jpg"><img src="assets/images/wifi.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/cisco.jpg"><img src="assets/images/cisco.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/routercisco.jpg"><img src="assets/images/routercisco.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div> <br>
+                <p class="text-secondary enhanced-paragraph">
+                    j'ai eu aussi à configurer une multitude de serveur sur un <span class="highlight">Hyperviseur VMware</span> pour supporter les services de l'entreprise. J'ai configuré un serveur <span class="highlight">DNS</span> 
+                    pour la résolution des noms de domaines, un serveur <span class="highlight">AD DS</span> pour la gestion des utilisateurs, un serveur <span class="highlight">Hmailserver</span> pour les comptes mails et un serveur 
+                    <span class="highlight">Web</span> pour l'hébergement de site web.
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/dns.jpg"><img src="assets/images/dns.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/adds.jpg"><img src="assets/images/adds.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/remote.jpg"><img src="assets/images/remote.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div> <br>
+            </section>
 
+            <!-- compétences Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Quelques compétences mobilisées</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Administration réseaux (cisco,LAN,WAN,)</li>
+                    <li class="list-group-item">Virtualisation (Vmware)</li>
+                    <li class="list-group-item">Scripting powershell & bash Linux</li>
+                    <li class="list-group-item">Administration systèmes avancés (windows server & debian)</li>
+                    <li class="list-group-item">Sécuriser les Services (authentification radius et AD-DS-)</li>
+                    <li class="list-group-item">Interconnexion de services & protocoles (LDAP, Grafana, RDP)</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
 

@@ -15,32 +15,71 @@
 
 
        <!-- Navbar -->
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills custom-nav">
-            <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-            <!-- Ajout d'un dropdown pour "Projets" -->
-            <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projets
-                </a>
-                <ul class="dropdown-menu custum-drop" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="iots.html">IOTs</a></li>
-                    <li><a class="dropdown-item" href="programmation.html">Programmation</a></li>
-                    <li><a class="dropdown-item" href="reseaux.html">Réseaux et Services</a></li>
-                    <li><a class="dropdown-item" href="cyber.html">Cybersécurité</a></li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="assets/docs/cv.pdf" class="nav-link">Télécharger mon CV</a></li>
-        </ul>
-    </header>
-</div>
+       <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills custom-nav">
+                <li><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+                <li><a class="nav-link" href="iots.html">IOTs</a></li>
+                <li><a class="nav-link" href="programmation.html">Programmation</a></li>
+                <li><a class="nav-link" href="reseaux.html">Réseaux & Systèmes</a></li>
+                <li><a class="nav-link active" href="cyber.html">Cybersécurités</a></li>
+                <li><a class="nav-link"href="assets/docs/cv.pdf">Télécharger mon CV</a></li>
+            </ul>
+        </header>
+    </div>
       <div class="b-example-divider"></div>
     <!--Main content-->
 
     <main>
-  
+        <div class="container py-5">
+            <!-- Présentation Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Effectuer un Pentesting</h2>
+                <p class="text-secondary enhanced-paragraph">
+                    J'ai mené un <span class="highlight">pentesting</span> sur la machine <span class="highlight">Phineas 1</span>, commençant par la découverte de l'IP cible avec <span class="highlight">netdiscover</span>. Après avoir identifié l'adresse IP suspecte, j'ai utilisé <span class="highlight">nmap</span> pour confirmer la présence d'un <span class="highlight">serveur web Apache 2.4.6</span> et détecté une vulnérabilité potentielle avec la méthode TRACE. Ensuite, j'ai exploré le site via un navigateur et confirmé qu'il s'agissait d'une page par défaut d'Apache. J'ai utilisé <span class="highlight">Nikto</span> pour analyser plus avant, découvrant une possible vulnérabilité liée à l'outil curl, et j'ai procédé à une énumération avec <span class="highlight">Gobuster</span> pour trouver des répertoires et fichiers cachés, ce qui m'a conduit à découvrir le CMS <span class="highlight">Fuel</span>.
+                </p>
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/netstat.jpg"><img src="assets/images/netstat.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/indexphp.jpg"><img src="assets/images/indexphp.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/gobuster.jpg"><img src="assets/images/gobuster.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div> <br>
+                <p class="text-secondary enhanced-paragraph">
+                    Après avoir identifié Fuel comme un CMS, j'ai trouvé la page de login en tentant différentes URL. J'ai ensuite cherché des exploits connus pour Fuel CMS sur <span class="highlight">ExploitDB</span>, trouvant un script Python pour une attaque de type RCE. L'exploitation de cette vulnérabilité m'a permis de m'introduire dans le système en tant que <span class="highlight">systemapache</span>. J'ai ensuite trouvé les informations de connexion de l'utilisateur 'anna' dans le fichier <span class="highlight">database.php</span>, ce qui m'a permis de me connecter via SSH. En explorant le système, j'ai découvert une vulnérabilité d'injection via pickle dans un fichier 'app.py', que j'ai exploité pour obtenir des privilèges root, trouvant ainsi le fichier <span class="highlight">root.txt</span>.
+                </p>
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/password.jpg"><img src="assets/images/password.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/davidhanma.jpg"><img src="assets/images/davidhanma.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/intrusion.jpg"><img src="assets/images/intrusion.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div>
+            </section>
+        
+            </section>
 
+            <!-- compétences Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Quelques compétences mobilisées</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Analyse et Scan Systèmes</li>
+                    <li class="list-group-item">Outils Cybersécurité kali Linux</li>
+                    <li class="list-group-item">Scripting bash Linux</li>
+                    <li class="list-group-item">Programmation avancées (python et php)</li>
+                    <li class="list-group-item">Connaissance approfondies des services web (apache, samba, base de données)</li>
+                    <li class="list-group-item">Maitrise avancée de l'anglais</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
 

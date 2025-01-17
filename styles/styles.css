@@ -59,7 +59,53 @@
     color: #563d7c; /* Changes text color on hover */
 }
 
+/* formulaire */
+/* Ajout du CSS pour le formulaire de contact */
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(193, 38, 38, 0.1);
+    transition: all 0.3s ease;
+}
 
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.contact-form .form-control {
+    border: 1px solid #6f42c1;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #563d7c;
+    box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
+    outline: 0;
+}
+
+.btn-outline-custom {
+    border-color: #6f42c1;
+    color: #6f42c1;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-custom:hover {
+    background-color: #563d7c;
+    color: white;
+    transform: scale(1.05);
+}
 body.bg-light {
     background-color: #e9ecef !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
