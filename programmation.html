@@ -12,62 +12,69 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="bg-light">
-    <!-- Navbar -->
-    <div class="container">
+
+
+       <!-- Navbar -->
+       <div class="container">
         <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills custum-nav">
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="projets.html" class="nav-link">Projets</a></li>
-            <li class="nav-item"><a href="assets/docs/cv.pdf" class="nav-link">CV</a></li>
-            <li class="nav-item"><a href="extra.html" class="nav-link">Savoir plus</a></li>
-          </ul>
+            <ul class="nav nav-pills custom-nav">
+                <li><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+                <li><a class="nav-link" href="iots.html">IOTs</a></li>
+                <li><a class="nav-link active" href="programmation.html">Programmation</a></li>
+                <li><a class="nav-link" href="reseaux.html">Réseaux & Systèmes</a></li>
+                <li><a class="nav-link" href="cyber.html">Cybersécurités</a></li>
+                <li><a class="nav-link"href="assets/docs/cv.pdf">Télécharger mon CV</a></li>
+            </ul>
         </header>
-      </div>
+    </div>
       <div class="b-example-divider"></div>
     <!--Main content-->
 
     <main>
-    <!-- Banner -->
-    <a href="http://mbengue.fr"> <div class="banner" style="background-image: url('assets/images/banner.jpg');">
-        <div class="content-overlay">
-            <h1 class="fw-bold mb-3 text-primary-custom custum-banner-title">Guy Mbengue</h1>
-            <p class="text-secondary custum-banner-text" >
-                Deuxième année Réseaux & Télécommunications <br> Parcours : Cybersécurité. <br> Cisco, Linux, Windows Server, Powershell, Pentesting
-                Finaliste CSAW ESC 2024
-            </p>
-        </div>
-    </div></a>
-   
+        <div class="container py-5">
+            <!-- Présentation Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Développer des Applications communicantes</h2>
+                <p class="text-secondary enhanced-paragraph">
+                    J'ai développé une application <span class="highlight">client/server</span> en <span class="highlight">java et XML</span> sous <span class="highlight">android</span>. Pour se faire j'ai eu à apprendre à utiliser le logiciel 
+                    <span class="highlight">Android Studio</span> ainsi que les APIs internets d'Android., 
+                </p>
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/layout.jpg"><img src="assets/images/layout.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/structureapp.jpg"><img src="assets/images/structureapp.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div> <br>
+                <p class="text-secondary enhanced-paragraph">
+                    Mon application devait supporter des technologies comme le <span class="highlight">Multithreading</span> pour fonctionner aussi bien en tant que client et server. Supporter les portocoles <span class="highlight">TCP/UDP</span>,
+                    mais également les <span class="highlight">sockets</span> pour la communication entre les deux parties de l'application. Pour finir, j'ai mis en place une <span class="highlight">Authentification utilisateur</span> pour le protocole TCP.
+                <div class="d-flex">
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/mainview.jpg"><img src="assets/images/mainview.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/clientview.jpg"><img src="assets/images/clientview.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                    <div class="portrait-container me-4">
+                        <a href="assets/images/serverview.jpg"><img src="assets/images/serverview.jpg" alt="setup" class="img-fluid" style="width: 250px; height: 150px; object-fit: cover; border: 3px solid #ffffff;"></a>
+                    </div>
+                </div> <br>
+            </section>
 
-    <!-- Link section -->
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="https://github.com/Guyexau" class="btn btn-block btn-outline-custom" aria-label="Visit my GitHub profile">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-5.png&r=0&g=0&b=0" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        GitHub
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="https://www.linkedin.com/in/guy-mbengue/" class="btn btn-block btn-outline-custom" aria-label="Visit my LinkedIn profile">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-3.png&r=0&g=0&b=0" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        LinkedIn
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="mailto:mbengue.guy@hackcess.org" class="btn btn-block btn-outline-custom" aria-label="Email me">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2013/png/iconmonstr-paper-plane-5.png&r=0&g=0&b=0" alt="Mail" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        Mail
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="assets/docs/cv.pdf" class="btn btn-block btn-outline-custom" target="_blank" aria-label="Download my CV">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2017/png/iconmonstr-file-37.png&r=0&g=0&b=0" alt="cv" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        CV
-                    </a>
-                </div>
-            </div>
+            <!-- compétences Section -->
+            <section class="bg-white-custom p-4 rounded shadow-sm mb-4">
+                <h2 class="section-title text-primary-custom">Quelques compétences mobilisées</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Maitrise des protocoles de communications (TCP/UDP)</li>
+                    <li class="list-group-item">Virtualisation d'application et d'os (Android & Linux)</li>
+                    <li class="list-group-item">Programmation (python,java et C)</li>
+                    <li class="list-group-item">Développement d'Applications avec API et protocoles internet (java.net & java.io)</li>
+                    <li class="list-group-item">Sécuriser les Services (authentification)</li>
+                    <li class="list-group-item">Analyse et compréhension d'un cahier des charges technique</li>
+                </ul>
+            </section>
         </div>
     </main>
 
@@ -90,7 +97,7 @@
             </p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,32 @@
 /* Custom Colors */
+/* navbar */
 
+.custom-nav .nav-link {
+    color: #6f42c1; /* Couleur de base des liens de la navbar */
+    border-radius: 30px; /* Coins arrondis pour les boutons */
+    padding: 10px 20px; /* Padding pour un meilleur look */
+    transition: all 0.3s ease; /* Transition pour l'effet hover */
+}
 
+.custom-nav .nav-link.active, .custom-nav .nav-link:hover {
+    background-color: #6f42c1; /* Couleur de fond pour le lien actif et au survol */
+    color: white; /* Couleur du texte au survol */
+}
+
+.custom-nav .dropdown-toggle::after {
+    color: #6f42c1; /* Couleur de la flèche du dropdown */
+}
+
+.custum-drop .dropdown-item {
+    color: #6f42c1; /* Couleur de base des items du dropdown */
+    padding: 10px 20px; /* Padding pour un meilleur look */
+    transition: all 0.3s ease; /* Transition pour l'effet hover */
+}
+
+.custum-drop .dropdown-item:hover {
+    background-color: #6f42c1; /* Couleur de fond au survol des items du dropdown */
+    color: white; /* Couleur du texte au survol des items du dropdown */
+}
 /* Banner Styles */
 .banner {
     width: 100%;
@@ -32,6 +58,8 @@
 .banner:hover .content-overlay {
     color: #563d7c; /* Changes text color on hover */
 }
+
+
 body.bg-light {
     background-color: #e9ecef !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,13 +81,13 @@ body.bg-light {
     color: white !important;
 }
 .custum-link {
-    color: #6f42c1;
+    color: #f3e5f5;
     font-weight: 500;
     text-decoration: none;
     font-size: 1rem !important;
 }
 .custum-link:hover {
-    color: #563d7c;
+    color: #f3e5f5;
     text-decoration: underline;
 }
 .enhanced-paragraph {
@@ -252,10 +280,10 @@ footer p.small {
 .card__title {
     margin: 0;
     font-size: 24px;
-    color: #160d27;
+    color: #f3e5f5;
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: #160d27;
+    text-decoration-color: #f3e5f5;
 }
 
 .card:hover svg {
@@ -266,7 +294,7 @@ footer p.small {
     margin: 10px 0 0;
     font-size: 14px;
     font-weight: 600;
-    color: #160d27;
+    color: #f3e5f5;
     line-height: 1.4;
     flex-grow: 1; /* Permet au texte de remplir l'espace restant */
     overflow-y: auto; /* Ajoute un scroll si le texte est trop long */

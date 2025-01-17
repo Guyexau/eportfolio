@@ -12,63 +12,35 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="bg-light">
-    <!-- Navbar -->
-    <div class="container">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills custum-nav">
-            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="projets.html" class="nav-link">Projets</a></li>
-            <li class="nav-item"><a href="assets/docs/cv.pdf" class="nav-link">CV</a></li>
-            <li class="nav-item"><a href="extra.html" class="nav-link">Savoir plus</a></li>
-          </ul>
-        </header>
-      </div>
+
+
+       <!-- Navbar -->
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills custom-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+            <!-- Ajout d'un dropdown pour "Projets" -->
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projets
+                </a>
+                <ul class="dropdown-menu custum-drop" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="iots.html">IOTs</a></li>
+                    <li><a class="dropdown-item" href="programmation.html">Programmation</a></li>
+                    <li><a class="dropdown-item" href="reseaux.html">Réseaux et Services</a></li>
+                    <li><a class="dropdown-item" href="cyber.html">Cybersécurité</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="assets/docs/cv.pdf" class="nav-link">Télécharger mon CV</a></li>
+        </ul>
+    </header>
+</div>
       <div class="b-example-divider"></div>
     <!--Main content-->
 
     <main>
-    <!-- Banner -->
-    <a href="http://mbengue.fr"> <div class="banner" style="background-image: url('assets/images/banner.jpg');">
-        <div class="content-overlay">
-            <h1 class="fw-bold mb-3 text-primary-custom custum-banner-title">Guy Mbengue</h1>
-            <p class="text-secondary custum-banner-text" >
-                Deuxième année Réseaux & Télécommunications <br> Parcours : Cybersécurité. <br> Cisco, Linux, Windows Server, Powershell, Pentesting
-                Finaliste CSAW ESC 2024
-            </p>
-        </div>
-    </div></a>
-   
+  
 
-    <!-- Link section -->
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="https://github.com/Guyexau" class="btn btn-block btn-outline-custom" aria-label="Visit my GitHub profile">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-5.png&r=0&g=0&b=0" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        GitHub
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="https://www.linkedin.com/in/guy-mbengue/" class="btn btn-block btn-outline-custom" aria-label="Visit my LinkedIn profile">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-3.png&r=0&g=0&b=0" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        LinkedIn
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="mailto:mbengue.guy@hackcess.org" class="btn btn-block btn-outline-custom" aria-label="Email me">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2013/png/iconmonstr-paper-plane-5.png&r=0&g=0&b=0" alt="Mail" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        Mail
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <a href="assets/docs/cv.pdf" class="btn btn-block btn-outline-custom" target="_blank" aria-label="Download my CV">
-                        <img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2017/png/iconmonstr-file-37.png&r=0&g=0&b=0" alt="cv" style="width: 20px; height: 20px; margin-right: 5px; vertical-align: middle;"/>
-                        CV
-                    </a>
-                </div>
-            </div>
-        </div>
     </main>
 
 
@@ -90,7 +62,7 @@
             </p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
